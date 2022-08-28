@@ -1,5 +1,5 @@
 {
-  "name": "Nagarro_Internship_Project2",
+  "name": "nagarro_internship_project2",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,29 +8,21 @@
     "start": "node app.js",
     "dev": "nodemon ./app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
     "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-fileupload": "^1.4.0",
-    "express-messages": "^1.0.1",
     "express-session": "^1.17.3",
-    "express-validation": "^4.1.0",
-    "express-validator": "^6.14.2",
-    "fs-extra": "^10.1.0",
-    "mkdirp": "^1.0.4",
-    "mongoose": "^6.5.3",
-    "mongoose-paginate": "^5.0.3",
+    "mongoose": "^6.5.1",
     "nodemon": "^2.0.19",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "resize-img": "^2.0.0"
+    "passport-local-mongoose": "^7.1.2",
+    "path": "^0.12.7",
+    "stripe": "^10.4.0"
   }
 }

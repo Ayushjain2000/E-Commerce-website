@@ -1,48 +1,52 @@
-var express=require('express');
-var mongoose=require('mongoose');
-var mongoosePaginate=require('mongoose-paginate');
-var Schema = mongoose.Schema
-mongoose.connect("mongodb+srv://<username>:<password>@cluster0-owf5m.mongodb.net/cmscart?retryWrites=true&w=majority",{ useUnifiedTopology: true, useNewUrlParser: true  })
+const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
-// Product schema 
-const ProductSchema=new Schema({
+const productSchema =new mongoose.Schema({
 
-        title:{
-            type:String,
-            required:true,
-            trim: true
+    productName:{
+        type:String,
+        trim:true,
+        required:true
+    },
+    price:{
+        type:String,
+        trim:true,
+        required:true
+    },
+    img:{
+        type:String,
+        trim:true,
+    },
+    desc:{
+        type:String,
+        trim:true,
+        required:true
+    },
+    category:{
+        type:String,
+        trim:true,
+        required:true
+    },
+    reviews:[
+        {
+            content:{
+                type:String,
+                trim:true,
+            },
+
+            star:{
+                type:String,
+                trim:true,
+            },
+
+            postedBy:{
+                type:String,
+                trim:true,
+            }
         },
-        slug:{
-            type:String,
-            trim: true
-        }, 
-         desc:{
-            type:String,
-            required:true,
-            trim: true
-        },
-        category:{
-            type:String,
-            required:true,
-            trim: true
-        },
-        price:{
-            type:Number,
-            trim: true,
-            required:true
-        },
-        image:{
-            type:String,
-            
-        },
-        tt:{
-            type:Number,
-            required:true,
-            default:1
-        }
+    ]
 
 });
-ProductSchema.plugin(mongoosePaginate);
-module.exports = ProductSchema;
 
-// var Page=mongoose.exports=mongoose.model('Page',PageSchema);
+const Product = mongoose.model('Product',productSchema);
+module.exports = Product;
