@@ -32,17 +32,11 @@ $(document).ready(function(){
                         <div class="mt-1 mb-0 text-muted small">
                           <span>100% Verified by admin</span>
                           <span class="text-primary"> • </span>
-                          <span>Light weight</span>
+                          
                           <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
+                          
                         </div>
-                        <div class="mb-2 text-muted small">
-                          <span>Unique design</span>
-                          <span class="text-primary"> • </span>
-                          <span>For men</span>
-                          <span class="text-primary"> • </span>
-                          <span>Casual<br /></span>
-                        </div>
+      
                         <p class="text-truncate mb-4 mb-md-0">
                         ${product.desc}
                         </p>

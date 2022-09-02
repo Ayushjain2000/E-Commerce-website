@@ -414,6 +414,11 @@ li {
   outline: none;
 }
 
+.img-cart {
+  display: inline;
+  margin-top: 50%;
+}
+
 @media only screen and (max-width: 600px) {
   .product-list .card {
     /* width: 100vw; */
@@ -438,6 +443,7 @@ html, body{
 img{
     width: 100%;
     display: block;
+    
 }
 .main-wrapper{
     min-height: 80vh;
@@ -469,6 +475,7 @@ img{
 .img-container img{
     width: 500px;
     margin: 0 auto;
+
 }
 .hover-container{
     display: flex;
