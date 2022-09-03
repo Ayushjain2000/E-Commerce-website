@@ -39,7 +39,3 @@ View all the Users Info along with Cart Information and Orders Information<br />
 View all the order information placed throughout the website.<br />
 The Admin Dashboard can only be accessed as an Admin user<br />
 
-Default Admin Credentials :<br />
-
-username : admin<br />
-password : admin<br />
